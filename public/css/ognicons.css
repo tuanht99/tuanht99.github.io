@@ -1,0 +1,146 @@
+@font-face {
+    font-family: icomoon;
+    src: url('icomoon.eot?x0rygf');
+    src: url('icomoon.eot?x0rygf#iefix') format('embedded-opentype'), format('truetype'), url('icomoon.woff?x0rygf') format('woff'), url('icomoon.svg?x0rygf#icomoon') format('svg');
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: Lato-Heavy;
+    src: url('LatoLatin-Heavy.eot');
+    src: url('LatoLatin-Heavy.eot') format('embedded-opentype'), url('LatoLatin-Heavy.ttf') format('truetype'), url('LatoLatin-Heavy.woff') format('woff')
+}
+
+[class*=" icon-"],
+[class^=icon-] {
+    font-family: icomoon!important;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.icon-apple:before {
+    content: "\e900"
+}
+
+.icon-banana:before {
+    content: "\e901"
+}
+
+.icon-basket:before {
+    content: "\e902"
+}
+
+.icon-blender:before {
+    content: "\e903"
+}
+
+.icon-bread:before {
+    content: "\e904"
+}
+
+.icon-broccoli:before {
+    content: "\e905"
+}
+
+.icon-carrot:before {
+    content: "\e906"
+}
+
+.icon-coconut:before {
+    content: "\e907"
+}
+
+.icon-corn:before {
+    content: "\e908"
+}
+
+.icon-cucumber:before {
+    content: "\e909"
+}
+
+.icon-egg:before {
+    content: "\e90a"
+}
+
+.icon-eggplant:before {
+    content: "\e90b"
+}
+
+.icon-ekobag:before {
+    content: "\e90c"
+}
+
+.icon-grain:before {
+    content: "\e90d"
+}
+
+.icon-grape:before {
+    content: "\e90e"
+}
+
+.icon-honey:before {
+    content: "\e90f"
+}
+
+.icon-jam:before {
+    content: "\e910"
+}
+
+.icon-leaf:before {
+    content: "\e911"
+}
+
+.icon-lemon:before {
+    content: "\e912"
+}
+
+.icon-lettuce:before {
+    content: "\e913"
+}
+
+.icon-milk:before {
+    content: "\e914"
+}
+
+.icon-mushrooms:before {
+    content: "\e915"
+}
+
+.icon-onion:before {
+    content: "\e916"
+}
+
+.icon-pear:before {
+    content: "\e917"
+}
+
+.icon-pepper:before {
+    content: "\e918"
+}
+
+.icon-radish:before {
+    content: "\e919"
+}
+
+.icon-smoothie:before {
+    content: "\e91a"
+}
+
+.icon-squeezer:before {
+    content: "\e91b"
+}
+
+.icon-tomato:before {
+    content: "\e91c"
+}
+
+.icon-watermelon:before {
+    content: "\e91d"
+}
