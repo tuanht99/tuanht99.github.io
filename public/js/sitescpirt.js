@@ -244,11 +244,13 @@ document.addEventListener("DOMContentLoaded", function() {
 // DOMContentLoaded  end
 
 //Navbar search
-$(document).ready(function() {
+let search = document.querySelector('.fa-search');
+let toggle = docyment.querySelector('togglesearch');
 
-    $(".fa-search").click(function() {
-        $(".togglesearch").toggle();
-        $("input[type='text']").focus();
-    });
-
-});
+function myFunction() {
+    if (toggle.style.display === "none") {
+        toggle.style.display = "block";
+    } else {
+        toggle.style.display = "none";
+    }
+}
