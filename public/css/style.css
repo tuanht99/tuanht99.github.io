@@ -111,6 +111,11 @@ hr:not([size]) {
     color: #fff;
 }
 
+.togglesearch {
+    position: relative;
+    z-index: 9999;
+}
+
 
 /* Banner */
 
