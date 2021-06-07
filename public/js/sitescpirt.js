@@ -242,3 +242,13 @@ document.addEventListener("DOMContentLoaded", function() {
     // end if innerWidth
 });
 // DOMContentLoaded  end
+
+//Navbar search
+$(document).ready(function() {
+
+    $(".fa-search").click(function() {
+        $(".togglesearch").toggle();
+        $("input[type='text']").focus();
+    });
+
+});
