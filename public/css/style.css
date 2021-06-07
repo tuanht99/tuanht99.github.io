@@ -11,6 +11,10 @@ a {
     font-size: 0.9rem;
 }
 
+.grey {
+    color: #999999;
+}
+
 .padr-4 {
     padding-right: 20px;
 }
