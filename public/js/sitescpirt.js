@@ -244,7 +244,7 @@ document.addEventListener("DOMContentLoaded", function() {
 // DOMContentLoaded  end
 
 //Navbar search
-let toggle = docyment.querySelector('togglesearch');
+let toggle = document.querySelector('togglesearch');
 
 function myFunction() {
     if (toggle.style.display === "none") {
