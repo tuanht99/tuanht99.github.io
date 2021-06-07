@@ -126,7 +126,6 @@ hr:not([size]) {
     line-height: 60px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-top: 4px solid #D80B15;
-    display: none;
 }
 
 .togglesearch:before {
