@@ -244,7 +244,6 @@ document.addEventListener("DOMContentLoaded", function() {
 // DOMContentLoaded  end
 
 //Navbar search
-let search = document.querySelector('.fa-search');
 let toggle = docyment.querySelector('togglesearch');
 
 function myFunction() {
