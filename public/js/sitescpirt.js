@@ -3,28 +3,50 @@ let visibility1 = document.querySelector('.carousel-control-next-icon');
 let visibility2 = document.querySelector('.carousel-control-prev-icon');
 let carouselHover = document.querySelector('.carousel');
 
-//Best Seller
-let displayMe = document.querySelectorAll('.display-me');
-let clickMe = document.querySelectorAll('.click-me1');
-let temp = 0;
-
-//Products
-let clickMe1 = document.querySelectorAll('.product-click');
-let changeBorder = document.querySelectorAll('.change-border');
-let productImage = document.querySelectorAll('.product-img');
-
-//Navbar
 carouselHover.addEventListener('mousemove', () => {
     visibility1.style.visibility = 'visible';
     visibility2.style.visibility = 'visible';
 });
-
 carouselHover.addEventListener('mouseleave', () => {
     visibility1.style.visibility = 'hidden';
     visibility2.style.visibility = 'hidden';
 });
 
+
+// //Products
+// let clickMe1 = document.querySelectorAll('.product-click');
+// let changeBorder = document.querySelectorAll('.change-border');
+// let productImage = document.querySelectorAll('.product-img');
+
+// for (let i = 0; i < clickMe1.length; i++) {
+//     clickMe1[i].addEventListener('mousemove', () => {
+//         changeBorder[i].style.display = 'block';
+//         productImage[i].style.borderColor = '#88c000';
+//     });
+// }
+// for (let i = 0; i < clickMe1.length; i++) {
+//     clickMe1[i].addEventListener('mouseleave', () => {
+//         changeBorder[i].style.display = 'inline-block';
+//         productImage[i].style.borderColor = '#e7f2cc';
+//     });
+// }
+
+
 //Best Seller
+let displayMe = document.querySelectorAll('.display-me'); //Cac tab carousel: 4 tab
+let clickMe = document.querySelectorAll('.click-me1'); //04 lua chon: nhan lua chon nao thi ra tab Carousel do
+let choice = document.querySelectorAll('.product-choice');
+let product = document.querySelectorAll('.product-click');
+let temp = 0;
+
+for (let i = 0; i < product.length; i++) {
+    product[i].addEventListener('mousemove', () => {
+        choice[i].style.display = "block";
+    })
+    product[i].addEventListener('mouseleave', () => {
+        choice[i].style.display = "none";
+    })
+}
 for (let i = 0; i < clickMe.length; i++) {
     clickMe[i].addEventListener('click', () => {
         clickMe[i].setAttribute("style", "color: #88c000; border-bottom: 1px solid #88c000;");
@@ -38,20 +60,6 @@ for (let i = 0; i < clickMe.length; i++) {
     });
 }
 
-//Products
-for (let i = 0; i < clickMe1.length; i++) {
-    clickMe1[i].addEventListener('mousemove', () => {
-        changeBorder[i].style.display = 'block';
-        productImage[i].style.borderColor = '#88c000';
-    });
-}
-
-for (let i = 0; i < clickMe1.length; i++) {
-    clickMe1[i].addEventListener('mouseleave', () => {
-        changeBorder[i].style.display = 'inline-block';
-        productImage[i].style.borderColor = '#e7f2cc';
-    });
-}
 
 //Scroll to top
 //Khi người dùng cuộn chuột thì gọi hàm scrollFunction
@@ -78,41 +86,45 @@ document.getElementById('myBtn').addEventListener("click", function() {
 //Owl Carousel
 //Client
 $('.own-two').owlCarousel({
-        nav: false,
-        dots: false,
-        loop: true,
-        margin: 10,
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 1
-            },
-            1000: {
-                items: 1
-            }
+    nav: false,
+    dots: false,
+    loop: true,
+    margin: 10,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 1
+        },
+        1000: {
+            items: 1
         }
-    })
-    //Lastest News
+    }
+})
+
+
+//Lastest News
 $('.owl-one').owlCarousel({
-        nav: false,
-        dots: false,
-        loop: true,
-        margin: 10,
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 2
-            },
-            1000: {
-                items: 3
-            }
+    nav: false,
+    dots: false,
+    loop: true,
+    margin: 10,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 2
+        },
+        1000: {
+            items: 3
         }
-    })
-    // Best Seller
+    }
+})
+
+
+// Best Seller
 $('.owl-three').owlCarousel({
     dotsEach: false,
     dots: true,
@@ -209,47 +221,43 @@ $('.owl-seven').owlCarousel({
 
 // Navbar dropdown menu hover
 document.addEventListener("DOMContentLoaded", function() {
-    // make it as accordion for smaller screens
     if (window.innerWidth > 992) {
-
         document.querySelectorAll('.navbar .nav-item').forEach(function(everyitem) {
-
             everyitem.addEventListener('mouseover', function(e) {
-
                 let el_link = this.querySelector('a[data-bs-toggle]');
-
                 if (el_link != null) {
                     let nextEl = el_link.nextElementSibling;
                     el_link.classList.add('show');
                     nextEl.classList.add('show');
                 }
-
             });
             everyitem.addEventListener('mouseleave', function(e) {
                 let el_link = this.querySelector('a[data-bs-toggle]');
-
                 if (el_link != null) {
                     let nextEl = el_link.nextElementSibling;
                     el_link.classList.remove('show');
                     nextEl.classList.remove('show');
                 }
-
-
             })
         });
-
     }
-    // end if innerWidth
 });
-// DOMContentLoaded  end
 
 //Navbar search
-let toggle = document.querySelector('togglesearch');
+let toggle = document.querySelector('.search-box');
+let search = document.querySelector('.border1');
+let show = document.querySelector('.show-box')
 
-function myFunction() {
-    if (toggle.style.display === "none") {
+search.addEventListener('click', () => {
+    if (show.style.display === "none") {
         toggle.style.display = "block";
+        show.style.display = "block";
     } else {
         toggle.style.display = "none";
+        show.style.display = "none";
     }
-}
+});
+toggle.addEventListener('click', () => {
+    show.style.display = "none";
+    toggle.style.display = "none";
+});
