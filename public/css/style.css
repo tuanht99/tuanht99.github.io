@@ -396,34 +396,24 @@ b .category-txt {
 
 /* Best Seller */
 
+.product-click {
+    position: relative;
+}
+
 .product-choice {
     position: absolute;
     background: #88c000;
-    bottom: 127px;
+    bottom: 97px;
     height: 50px;
     display: none;
     width: 100%;
 }
 
-.product-choice1 {
-    position: absolute;
-    background: #88c000;
-    bottom: 127px;
-    height: 50px;
-    display: none;
-    width: 100%;
-}
-
-.product-choice1 a i,
 .product-choice a i {
     color: #fff;
 }
 
-.product-click1:hover .product-choice1 {
-    display: block;
-}
-
-.product-click:hover .product-choice {
+.item .product-click:hover .product-choice {
     display: block;
 }
 
@@ -496,6 +486,14 @@ b .category-txt {
 
 
 /* Product */
+
+.product:hover .change-border {
+    display: block;
+}
+
+.product:hover .product-img {
+    border: 1px solid #88c000;
+}
 
 .no-sale {
     color: #cccccc;
