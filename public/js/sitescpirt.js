@@ -15,18 +15,8 @@ carouselHover.addEventListener('mouseleave', () => {
 //Best Seller
 let displayMe = document.querySelectorAll('.display-me'); //Cac tab carousel: 4 tab
 let clickMe = document.querySelectorAll('.click-me1'); //04 lua chon: nhan lua chon nao thi ra tab Carousel do
-let choice = document.querySelectorAll('.product-choice');
-let product = document.querySelectorAll('.product-click');
 let temp = 0;
 
-// for (let i = 0; i < product.length; i++) {
-//     product[i].addEventListener('mousemove', () => {
-//         choice[i].style.display = "block";
-//     })
-//     product[i].addEventListener('mouseleave', () => {
-//         choice[i].style.display = "none";
-//     })
-// }
 for (let i = 0; i < clickMe.length; i++) {
     clickMe[i].addEventListener('click', () => {
         clickMe[i].setAttribute("style", "color: #88c000; border-bottom: 1px solid #88c000;");
