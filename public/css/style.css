@@ -2,6 +2,10 @@ a {
     text-decoration: none;
 }
 
+.container {
+    width: 1170px;
+}
+
 
 /* Top Header */
 
@@ -29,6 +33,11 @@ a {
 
 
 /* Navbar */
+
+.navbar-pad {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
 hr:not([size]) {
     height: 0px;
