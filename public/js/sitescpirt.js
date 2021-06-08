@@ -12,26 +12,6 @@ carouselHover.addEventListener('mouseleave', () => {
     visibility2.style.visibility = 'hidden';
 });
 
-
-// //Products
-// let clickMe1 = document.querySelectorAll('.product-click');
-// let changeBorder = document.querySelectorAll('.change-border');
-// let productImage = document.querySelectorAll('.product-img');
-
-// for (let i = 0; i < clickMe1.length; i++) {
-//     clickMe1[i].addEventListener('mousemove', () => {
-//         changeBorder[i].style.display = 'block';
-//         productImage[i].style.borderColor = '#88c000';
-//     });
-// }
-// for (let i = 0; i < clickMe1.length; i++) {
-//     clickMe1[i].addEventListener('mouseleave', () => {
-//         changeBorder[i].style.display = 'inline-block';
-//         productImage[i].style.borderColor = '#e7f2cc';
-//     });
-// }
-
-
 //Best Seller
 let displayMe = document.querySelectorAll('.display-me'); //Cac tab carousel: 4 tab
 let clickMe = document.querySelectorAll('.click-me1'); //04 lua chon: nhan lua chon nao thi ra tab Carousel do
@@ -39,14 +19,14 @@ let choice = document.querySelectorAll('.product-choice');
 let product = document.querySelectorAll('.product-click');
 let temp = 0;
 
-for (let i = 0; i < product.length; i++) {
-    product[i].addEventListener('mousemove', () => {
-        choice[i].style.display = "block";
-    })
-    product[i].addEventListener('mouseleave', () => {
-        choice[i].style.display = "none";
-    })
-}
+// for (let i = 0; i < product.length; i++) {
+//     product[i].addEventListener('mousemove', () => {
+//         choice[i].style.display = "block";
+//     })
+//     product[i].addEventListener('mouseleave', () => {
+//         choice[i].style.display = "none";
+//     })
+// }
 for (let i = 0; i < clickMe.length; i++) {
     clickMe[i].addEventListener('click', () => {
         clickMe[i].setAttribute("style", "color: #88c000; border-bottom: 1px solid #88c000;");
