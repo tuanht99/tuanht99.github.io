@@ -851,6 +851,12 @@ footer .footer-top .footer-menu li a {
     }
 }
 
+@media(max-width: 280.98px){
+    .category-item a{
+        left: 21%;
+    }
+}
+
 @media (min-width: 768px) {
     .navbar-light .navbar-toggler {
         display: none;
