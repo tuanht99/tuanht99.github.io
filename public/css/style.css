@@ -875,7 +875,8 @@ footer .footer-top .footer-menu li a {
 #loading {
     position: fixed;
     width: 100%;
-    height: 100vh;
-    background: #fff url('../images/HoangSensei.jpg') no-repeat center center;
+    height: 100%;
+    background: #fff url('../images/farm1.jpg') no-repeat center;
+    background-size: cover;
     z-index: 9999;
     }

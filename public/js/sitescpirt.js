@@ -31,7 +31,7 @@ for (let i = 0; i < clickMe.length; i++) {
 }
 
 jQuery(document).ready(function() {
-    jQuery('#loading').fadeOut(4000);
+    jQuery('#loading').fadeOut(2000);
 });
 
 //Scroll to top
