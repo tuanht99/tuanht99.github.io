@@ -19,6 +19,7 @@
 </head>
 
 <body>
+    <div id="loading"></div>
     <!-- Header -->
     <header>
         <!-- Top Header -->
@@ -49,142 +50,145 @@
         </div>
 
         <!-- Navbar -->
-        <div class="container my-fixed">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="#">
-                    <img src="./public/images/grain_7a113f7e-0da4-47ac-a71a-943fbed8c933.png" alt="Logo" class="img-fluid"> OGNSHOP
-                </a>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link active dropdown-toggle" aria-current="page" href="#" id="home" data-bs-toggle="dropdown">HOME</a>
-                            <ul class="dropdown-menu" aria-labelledby="home">
-                                <li><a class="dropdown-item" href="https://orgnshop.myshopify.com/">Home
-                                            1</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="https://orgnshop.myshopify.com/">Home
-                                            2</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="https://orgnshop.myshopify.com/">Home
-                                            3</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="https://orgnshop.myshopify.com/">Home
-                                            4</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">SHOP</a>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" aria-current="page" href="#" id="category" data-bs-toggle="dropdown">CATEGORIES</a>
-                            <ul class="dropdown-menu" aria-labelledby="category">
-                                <li><a class="dropdown-item" href="https://orgnshop.myshopify.com/collections/fresh-fruits">Category
-                                            1</a>
-                                </li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="https://orgnshop.myshopify.com/collections/fresh-fruits">Category
-                                            2</a>
-                                </li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="https://orgnshop.myshopify.com/collections/fresh-fruits">Category
-                                            3</a>
-                                </li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="https://orgnshop.myshopify.com/collections/fresh-fruits">Category
-                                            4</a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">ABOUT US</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" aria-current="page" href="#" id="aboutus" data-bs-toggle="dropdown">PAGES</a>
-                            <ul class="dropdown-menu" aria-labelledby="aboutus">
-                                <li><a class="dropdown-item" href="https://orgnshop.myshopify.com/blogs/news">Pages
-                                            1</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="https://orgnshop.myshopify.com/blogs/news">Pages
-                                            2</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="https://orgnshop.myshopify.com/blogs/news">Pages
-                                            3</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="https://orgnshop.myshopify.com/blogs/news">Pages
-                                            4</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" aria-current="page" href="#" id="contact" data-bs-toggle="dropdown">CONTACT</a>
-                            <ul class="dropdown-menu" aria-labelledby="contact">
-                                <li><a class="dropdown-item" href="https://orgnshop.myshopify.com/pages/contact-1">Contact
-                                            1</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="https://orgnshop.myshopify.com/pages/contact-1">Contact
-                                            2</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="https://orgnshop.myshopify.com/pages/contact-1">Contact
-                                            3</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="https://orgnshop.myshopify.com/pages/contact-1">Contact
-                                            4</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <ul class="d-flex flex-row center-flex">
-                        <li>
-                            <a href="#" class="border1">
-                                <i class="fas fa-search" style="color:
-                                        #333333;"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://orgnshop.myshopify.com/cart" class="border1">
-                                <i class="fab fa-opencart" style="color:
-                                        #333333;"></i>
-                                <span class="border1-up">0</span>
-                            </a>
-                        </li>
-                        <li>
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle
-                                    navigation">
-                                    <i class="fas fa-bars" style="color:
-                                        black;"></i>
-                                </button>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+        <div class="cover-me">
+            <div class="container my-fixed">
+                <nav class="autohide navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand" href="#">
+                        <img src="./public/images/grain_7a113f7e-0da4-47ac-a71a-943fbed8c933.png" alt="Logo" class="img-fluid"> OGNSHOP
+                    </a>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link active dropdown-toggle" aria-current="page" href="#" id="home" data-bs-toggle="dropdown">HOME</a>
+                                <ul class="dropdown-menu" aria-labelledby="home">
+                                    <li><a class="dropdown-item" href="https://orgnshop.myshopify.com/">Home
+                                                1</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="https://orgnshop.myshopify.com/">Home
+                                                2</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="https://orgnshop.myshopify.com/">Home
+                                                3</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="https://orgnshop.myshopify.com/">Home
+                                                4</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">SHOP</a>
+                            </li>
+    
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" aria-current="page" href="#" id="category" data-bs-toggle="dropdown">CATEGORIES</a>
+                                <ul class="dropdown-menu" aria-labelledby="category">
+                                    <li><a class="dropdown-item" href="https://orgnshop.myshopify.com/collections/fresh-fruits">Category
+                                                1</a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="https://orgnshop.myshopify.com/collections/fresh-fruits">Category
+                                                2</a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="https://orgnshop.myshopify.com/collections/fresh-fruits">Category
+                                                3</a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="https://orgnshop.myshopify.com/collections/fresh-fruits">Category
+                                                4</a>
+                                    </li>
+                                </ul>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">ABOUT US</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" aria-current="page" href="#" id="aboutus" data-bs-toggle="dropdown">PAGES</a>
+                                <ul class="dropdown-menu" aria-labelledby="aboutus">
+                                    <li><a class="dropdown-item" href="https://orgnshop.myshopify.com/blogs/news">Pages
+                                                1</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="https://orgnshop.myshopify.com/blogs/news">Pages
+                                                2</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="https://orgnshop.myshopify.com/blogs/news">Pages
+                                                3</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="https://orgnshop.myshopify.com/blogs/news">Pages
+                                                4</a></li>
+                                </ul>
+                            </li>
+    
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" aria-current="page" href="#" id="contact" data-bs-toggle="dropdown">CONTACT</a>
+                                <ul class="dropdown-menu" aria-labelledby="contact">
+                                    <li><a class="dropdown-item" href="https://orgnshop.myshopify.com/pages/contact-1">Contact
+                                                1</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="https://orgnshop.myshopify.com/pages/contact-1">Contact
+                                                2</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="https://orgnshop.myshopify.com/pages/contact-1">Contact
+                                                3</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="https://orgnshop.myshopify.com/pages/contact-1">Contact
+                                                4</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="d-flex flex-row center-flex">
+                            <li>
+                                <a href="#" class="border1">
+                                    <i class="fas fa-search" style="color:
+                                            #333333;"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://orgnshop.myshopify.com/cart" class="border1">
+                                    <i class="fab fa-opencart" style="color:
+                                            #333333;"></i>
+                                    <span class="border1-up">0</span>
+                                </a>
+                            </li>
+                            <li>
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle
+                                        navigation">
+                                        <i class="fas fa-bars" style="color:
+                                            black;"></i>
+                                    </button>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
         </div>
+        
         <div class="search-box">
         </div>
         <div class="show-box">

@@ -30,6 +30,9 @@ for (let i = 0; i < clickMe.length; i++) {
     });
 }
 
+jQuery(document).ready(function() {
+    jQuery('#loading').fadeOut(4000);
+});
 
 //Scroll to top
 //Khi người dùng cuộn chuột thì gọi hàm scrollFunction
@@ -40,9 +43,17 @@ function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         //nếu lớn hơn 20px thì hiện button
         document.getElementById("myBtn").style.display = "block";
+        document.querySelector('.cover-me').style.position = 'fixed';
+        document.querySelector('.cover-me').style.top = "0%";
+        document.querySelector('.cover-me').style.right = "0%";
+        document.querySelector('.cover-me').style.left = "0%";
+        document.querySelector('.cover-me').style.boxShadow = "0 4px 2px -2px gray";
+        document.querySelector('.cover-me').style.backgroundColor = "white";
+        document.querySelector('.cover-me').style.zIndex = "999";
     } else {
         //nếu nhỏ hơn 20px thì ẩn button
         document.getElementById("myBtn").style.display = "none";
+        document.querySelector('.cover-me').style.position = "static";
     }
 }
 //Gan su kien
@@ -51,7 +62,6 @@ document.getElementById('myBtn').addEventListener("click", function() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 });
-
 
 //Owl Carousel
 //Client
