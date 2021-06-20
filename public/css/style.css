@@ -349,7 +349,13 @@ b .category-txt {
 }
 
 .category-item:hover .category-img img {
+    transition-duration: 2s;
     transform: rotate(20deg) scale(1.2, 1.2);
+}
+
+.category-item .category-img img {
+    transition-duration: 2s;
+    transform: rotate(0deg);
 }
 
 .category-item:hover a {
@@ -851,17 +857,17 @@ footer .footer-top .footer-menu li a {
     }
 }
 
-@media(max-width: 280.98px){
-    .category-item a{
+@media(max-width: 280.98px) {
+    .category-item a {
         left: 21%;
     }
 }
 
-@media(max-width: 1199.98px){
-    .nav-item{
+@media(max-width: 1199.98px) {
+    .nav-item {
         padding-right: 10px;
     }
-    .cover-me{
+    .cover-me {
         position: static !important;
     }
 }
@@ -876,7 +882,7 @@ footer .footer-top .footer-menu li a {
     position: fixed;
     width: 100%;
     height: 100%;
-    background: #fff url('../images/farm1.jpg') no-repeat center;
+    background: #fff url('../images/200w\ \(1\).webp') no-repeat center;
     background-size: cover;
     z-index: 9999;
-    }
+}
