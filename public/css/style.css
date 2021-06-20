@@ -857,6 +857,15 @@ footer .footer-top .footer-menu li a {
     }
 }
 
+@media(max-width: 1199.98px){
+    .nav-item{
+        padding-right: 10px;
+    }
+    .cover-me{
+        position: static !important;
+    }
+}
+
 @media (min-width: 768px) {
     .navbar-light .navbar-toggler {
         display: none;
